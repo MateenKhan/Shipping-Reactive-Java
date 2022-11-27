@@ -32,4 +32,7 @@ public class EmployeeService {
     public Optional<Employee> get(Integer id) {
         return employeeRepository.findById(id);
     }
+    public List<Employee> findAll() {
+        return employeeRepository.findAll();
+    }
 }
